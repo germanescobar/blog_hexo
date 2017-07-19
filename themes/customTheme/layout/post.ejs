@@ -1,0 +1,20 @@
+<div class='container'>
+	<div class='jumbotron text-center' id="cabeza">
+		<a href="/"><h1><%= config.author %></h1></a>
+	    <p><%= config.subtitle %></p>
+	</div>
+	<div id="cuerpo" class="jumbotron">
+		<div class="text-center page-header">
+			<h2><%- page.title %></h2>
+		</div
+		<p><%- page.content %></p>
+		<div class="well text-center">
+			<%= date(page.date, config.date_format) %> 
+		</div>
+		<a class='btn btn-success btn-block' href='/'>Volver</a>
+	</div>
+	<footer class="jumbotron text-center" id="pie">
+		<h4>© 2017 Andrés Felipe Burbano, Todos los Derechos Reservados</h3>
+	</footer>
+</div>
+

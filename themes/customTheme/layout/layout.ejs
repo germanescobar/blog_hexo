@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Use <%= page.title %> for dynamic title -->
+	<title><%= config.title %></title>
+
+	<!-- Twitter bootstrap (via cdn) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<style type="text/css">
+		
+	body {
+  background-color: #ededed;
+}
+
+#cabeza {
+  background-color: #63bc50;
+  color: #ededed;
+  margin-top: 30px;
+}
+
+#cabeza a {
+  text-decoration: none;
+  color: #ededed;
+}
+
+#cuerpo {
+  background-color: #ffffff;
+  margin-top: 0px;
+}
+
+#cuerpo a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#cuerpo a:hover {
+  color: #63bc50;
+}
+
+#pie {
+  background-color: #000000;
+  color: #ededed;
+}
+
+	</style>
+
+</head>
+<body>
+	<div class='container'>
+		<%- body %>
+	</div>
+</body>
+</html>

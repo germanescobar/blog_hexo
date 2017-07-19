@@ -1,0 +1,28 @@
+<div class='jumbotron text-center' id="cabeza">
+	<h1><%= config.author %></h1>
+    <p><%= config.subtitle %></p>
+</div>
+
+<div id="cuerpo" class="jumbotron">
+	<% page.posts.each(function(post){ %>
+    	<div class="page-header">
+    		<h3>
+                <a href="<%- url_for(post.path) %>">
+        			<%= post.title %>
+        		</a>
+            </h3>
+            <div class='text-muted'>
+                <%= date(post.date, config.date_format) %> 
+            </div>
+            
+            <% if(post.excerpt) { %>
+                <p>
+                    <%- post.excerpt %>
+                </p>
+            <% } %>
+    	</div>
+  	<% }) %>
+</div>
+<footer class="jumbotron text-center" id="pie">
+    <h4>© 2017 Andrés Felipe Burbano, Todos los Derechos Reservados</h3>
+</footer>
